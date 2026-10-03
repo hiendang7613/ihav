@@ -33,6 +33,13 @@ Each entry is pinned to a release tag and its commit, so an install always gets 
 
 Each plugin keeps its own repository, issues and releases. This repository holds only the two catalog files: `.claude-plugin/marketplace.json` for Claude Code and `.agents/plugins/marketplace.json` for Codex.
 
+## Adding or updating a plugin
+
+Open a pull request that changes both catalog files the same way: `.claude-plugin/marketplace.json` and
+`.agents/plugins/marketplace.json`. Pin a release tag and its commit sha. The `check catalog` workflow runs
+`scripts/check_catalog.py`: it confirms each tag resolves to its sha, the manifest at that commit carries the entry's
+name, and every declared dependency is in this catalog. Merge when it passes.
+
 ## License
 
 MIT. Each plugin has its own license in its repository.
