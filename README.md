@@ -40,6 +40,10 @@ Open a pull request that changes both catalog files the same way: `.claude-plugi
 `scripts/check_catalog.py`: it confirms each tag resolves to its sha, the manifest at that commit carries the entry's
 name, and every declared dependency is in this catalog. Merge when it passes.
 
+Work in your own clone or `git worktree`, not in a folder another room or session also uses: a checkout or
+branch switch there can overwrite someone else's uncommitted change. Direct pushes to `main` are blocked for
+everyone, including admins.
+
 ## License
 
 MIT. Each plugin has its own license in its repository.
