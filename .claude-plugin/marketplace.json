@@ -2,7 +2,10 @@
   "$schema": "https://www.schemastore.org/claude-code-marketplace.json",
   "name": "ihav",
   "description": "The ihav family of Claude Code and Codex plugins in one catalog.",
-  "owner": {"name": "hiendang7613", "url": "https://github.com/hiendang7613"},
+  "owner": {
+    "name": "hiendang7613",
+    "url": "https://github.com/hiendang7613"
+  },
   "plugins": [
     {
       "name": "ihav-leaderboards",
@@ -10,7 +13,8 @@
         "source": "git-subdir",
         "url": "https://github.com/hiendang7613/ihav-leaderboards.git",
         "path": "plugins/ihav-leaderboards",
-        "ref": "main"
+        "ref": "v0.2.1",
+        "sha": "7944e429902dc1b064038fd94da1c80e339dac19"
       },
       "category": "productivity",
       "description": "Merge the most-visited public leaderboards of any domain into one quality-first leaderboard with confidence and Pareto charts.",

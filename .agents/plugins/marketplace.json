@@ -1,6 +1,8 @@
 {
   "name": "ihav",
-  "interface": {"displayName": "ihav"},
+  "interface": {
+    "displayName": "ihav"
+  },
   "plugins": [
     {
       "name": "ihav-leaderboards",
@@ -8,9 +10,13 @@
         "source": "git-subdir",
         "url": "https://github.com/hiendang7613/ihav-leaderboards.git",
         "path": "./plugins/ihav-leaderboards",
-        "ref": "main"
+        "ref": "v0.2.1",
+        "sha": "7944e429902dc1b064038fd94da1c80e339dac19"
       },
-      "policy": {"installation": "AVAILABLE", "authentication": "ON_INSTALL"},
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
       "category": "Productivity"
     },
     {
@@ -20,7 +26,10 @@
         "url": "https://github.com/hiendang7613/ihav-asd-ste100.git",
         "ref": "main"
       },
-      "policy": {"installation": "AVAILABLE", "authentication": "ON_INSTALL"},
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
       "category": "Productivity"
     }
   ]
