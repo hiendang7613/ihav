@@ -29,7 +29,7 @@ codex plugin add ihav-leaderboards@ihav
 
 Replace `ihav-leaderboards` with any plugin name in the table. Restart the host after installing.
 
-Each entry is pinned to a release tag and its commit, so an install always gets a tested release. ihav-asd-ste100 has no release tag yet and still follows `main`.
+Each entry is pinned to a release tag and its commit, so an install always gets a tested release.
 
 Each plugin keeps its own repository, issues and releases. This repository holds only the two catalog files: `.claude-plugin/marketplace.json` for Claude Code and `.agents/plugins/marketplace.json` for Codex.
 
