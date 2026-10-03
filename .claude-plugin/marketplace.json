@@ -1,0 +1,31 @@
+{
+  "$schema": "https://www.schemastore.org/claude-code-marketplace.json",
+  "name": "ihav",
+  "description": "The ihav family of Claude Code and Codex plugins in one catalog.",
+  "owner": {"name": "hiendang7613", "url": "https://github.com/hiendang7613"},
+  "plugins": [
+    {
+      "name": "ihav-leaderboards",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/hiendang7613/ihav-leaderboards.git",
+        "path": "plugins/ihav-leaderboards",
+        "ref": "main"
+      },
+      "category": "productivity",
+      "description": "Merge the most-visited public leaderboards of any domain into one quality-first leaderboard with confidence and Pareto charts.",
+      "homepage": "https://github.com/hiendang7613/ihav-leaderboards"
+    },
+    {
+      "name": "ihav-asd-ste100",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/hiendang7613/ihav-asd-ste100.git",
+        "ref": "main"
+      },
+      "category": "productivity",
+      "description": "Short, plain, predictable agent replies in any language: key-first bullets, a one-sentence conclusion and fixed status sections.",
+      "homepage": "https://github.com/hiendang7613/ihav-asd-ste100"
+    }
+  ]
+}
