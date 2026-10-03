@@ -42,6 +42,19 @@
       "category": "productivity",
       "description": "Native Claude Code + Codex agent rooms with shared tasks, peer messaging, reviews and native session recovery.",
       "homepage": "https://github.com/hiendang7613/ihav-agent-room"
+    },
+    {
+      "name": "ihav-web-visit-counter",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/hiendang7613/ihav-web-visit-counter.git",
+        "path": "plugins/ihav-web-visit-counter",
+        "ref": "v0.1.0",
+        "sha": "c596ccaf71e41d035e9ecf014f3a2684530ca30c"
+      },
+      "category": "productivity",
+      "description": "Monthly website traffic estimates with source and analysis date, or an honest rank when no estimate exists.",
+      "homepage": "https://github.com/hiendang7613/ihav-web-visit-counter"
     }
   ]
 }

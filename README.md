@@ -7,6 +7,7 @@ One catalog for the **ihav** family of plugins for Claude Code and Codex.
 | [ihav-leaderboards](https://github.com/hiendang7613/ihav-leaderboards) | Merges the most-visited public leaderboards of any domain into one quality-first leaderboard, with a confidence for every score and a Pareto chart for every cost. |
 | [ihav-asd-ste100](https://github.com/hiendang7613/ihav-asd-ste100) | Short, plain, predictable agent replies in any language. |
 | [ihav-agent-room](https://github.com/hiendang7613/ihav-agent-room) | Native Claude Code + Codex agent rooms with shared tasks, peer messaging, reviews and native session recovery. Installs ihav-asd-ste100 with it. |
+| [ihav-web-visit-counter](https://github.com/hiendang7613/ihav-web-visit-counter) | Monthly website traffic estimates with source and analysis date, or an honest rank when no estimate exists. |
 
 More plugins join the catalog when their repositories are public.
 

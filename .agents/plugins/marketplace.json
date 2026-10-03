@@ -45,6 +45,21 @@
         "authentication": "ON_INSTALL"
       },
       "category": "Productivity"
+    },
+    {
+      "name": "ihav-web-visit-counter",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/hiendang7613/ihav-web-visit-counter.git",
+        "path": "./plugins/ihav-web-visit-counter",
+        "ref": "v0.1.0",
+        "sha": "c596ccaf71e41d035e9ecf014f3a2684530ca30c"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
     }
   ]
 }
