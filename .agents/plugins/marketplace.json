@@ -37,8 +37,8 @@
       "source": {
         "source": "url",
         "url": "https://github.com/hiendang7613/ihav-agent-room.git",
-        "ref": "v0.6.0",
-        "sha": "996dd3c37876ae8a0b7b7bf0de8b94f921fef2bc"
+        "ref": "v0.6.1",
+        "sha": "08ba4bd1e7cf286163ac7bf9dcdbfbafed947c84"
       },
       "policy": {
         "installation": "AVAILABLE",
