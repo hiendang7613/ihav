@@ -25,7 +25,8 @@
       "source": {
         "source": "url",
         "url": "https://github.com/hiendang7613/ihav-asd-ste100.git",
-        "ref": "main"
+        "ref": "v0.13.0",
+        "sha": "1f38b36b94c8b361f4eec5e9f60e494a1915d5ff"
       },
       "category": "productivity",
       "description": "Short, plain, predictable agent replies in any language: key-first bullets, a one-sentence conclusion and fixed status sections.",
