@@ -31,6 +31,20 @@
         "authentication": "ON_INSTALL"
       },
       "category": "Productivity"
+    },
+    {
+      "name": "ihav-agent-room",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/hiendang7613/ihav-agent-room.git",
+        "ref": "v0.4.3",
+        "sha": "a20dfc6107b8ce00ce801a1d374919e74fc6a1e6"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
     }
   ]
 }
