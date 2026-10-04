@@ -18,6 +18,11 @@ def node(name):
     return name.replace("-", "_")
 
 
+def label(text):
+    """Quote a Mermaid label; parentheses and brackets inside an unquoted label break the parser."""
+    return '"' + text.replace('"', "#quot;") + '"'
+
+
 def render():
     registry = json.loads((ROOT / "plugins.json").read_text(encoding="utf-8"))["plugins"]
     catalog = {p["name"]: p["source"] for p in json.loads((ROOT / ".claude-plugin" / "marketplace.json").read_text(encoding="utf-8"))["plugins"]}
@@ -32,17 +37,18 @@ def render():
         source = catalog.get(p["name"])
         pinned = source.get("ref", "main") if isinstance(source, dict) else ("yes" if source else "no")
         rows.append(f"| [{p['name']}]({url}) | {p['visibility']} | {pinned if source else 'no'} | {p['description']} |")
-        shape = f'{node(p["name"])}["{p["name"]}"]' if p["visibility"] == "public" else f'{node(p["name"])}("{p["name"]} (private)")'
+        shape = (f'{node(p["name"])}[{label(p["name"])}]' if p["visibility"] == "public"
+                 else f'{node(p["name"])}({label(p["name"] + " (private)")})')
         lines.append(f"  {shape}")
     for p in registry:
         for target in p["depends_on"]:
             if target not in names:
                 raise SystemExit(f"{p['name']} depends on unknown plugin {target}")
-            lines.append(f"  {node(p['name'])} -->|declared| {node(target)}")
+            lines.append(f"  {node(p['name'])} -->|{label('declared')}| {node(target)}")
         for use in p["uses"]:
             if use["name"] not in names:
                 raise SystemExit(f"{p['name']} uses unknown plugin {use['name']}")
-            lines.append(f"  {node(p['name'])} -.->|{use['why']}| {node(use['name'])}")
+            lines.append(f"  {node(p['name'])} -.->|{label(use['why'])}| {node(use['name'])}")
     lines.append("```")
     legend = ("Solid arrows are dependencies declared in a plugin's manifest; the host installs them together. "
               "Dashed arrows are runtime or contract links that are not declared. Rounded boxes are private repositories.")
