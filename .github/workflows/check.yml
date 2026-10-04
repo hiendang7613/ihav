@@ -20,3 +20,5 @@ jobs:
           python-version: "3.12"
       - name: Check pins, manifests and dependencies
         run: python3 scripts/check_catalog.py
+      - name: Plugin map in README is current
+        run: python3 scripts/render_readme.py --check

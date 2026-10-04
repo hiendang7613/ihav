@@ -1,0 +1,25 @@
+{
+  "plugins": [
+    {"name": "ihav-agent-room", "visibility": "public",
+     "description": "Native Claude Code and Codex agent rooms with shared tasks, peer messaging, a machine agents space and cross-room contracts.",
+     "depends_on": ["ihav-asd-ste100"], "uses": []},
+    {"name": "ihav-asd-ste100", "visibility": "public",
+     "description": "Short, plain, predictable replies in any language: key-first bullets, a one-sentence Conclusion, then eight fixed status sections.",
+     "depends_on": [], "uses": []},
+    {"name": "ihav-leaderboards", "visibility": "public",
+     "description": "Merge the most-visited public leaderboards for any domain into one quality-first leaderboard with Pareto charts.",
+     "depends_on": ["ihav-web-visit-counter"], "uses": []},
+    {"name": "ihav-web-visit-counter", "visibility": "public",
+     "description": "Estimated monthly visits of a website, with date and source, no API key.",
+     "depends_on": [], "uses": []},
+    {"name": "ihav-competitor-search", "visibility": "private",
+     "description": "Offline competitor synthesis; the live survey is not implemented yet.",
+     "depends_on": [], "uses": [{"name": "ihav-web-visit-counter", "why": "runs its visits script for traffic numbers"}]},
+    {"name": "ihav-web-chat", "visibility": "private",
+     "description": "Browser-driven fan-out of one prompt to many web chatbots (unofficial, alpha).",
+     "depends_on": [], "uses": [{"name": "ihav-web-imagen", "why": "reuses its ChatGPT send-button finding"}]},
+    {"name": "ihav-web-imagen", "visibility": "private",
+     "description": "Draw with the ChatGPT account you already have, from Claude Code and Codex; formerly gpt-web-imagen.",
+     "depends_on": [], "uses": []}
+  ]
+}
