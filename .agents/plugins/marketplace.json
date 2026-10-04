@@ -24,8 +24,8 @@
       "source": {
         "source": "url",
         "url": "https://github.com/hiendang7613/ihav-asd-ste100.git",
-        "ref": "v0.19.2",
-        "sha": "f1e3707aed2b333faa36a39d826fe442ad989d57"
+        "ref": "v0.19.3",
+        "sha": "9f19b6505a011b4faa3339ce2f1db0facaabeb25"
       },
       "policy": {
         "installation": "AVAILABLE",
