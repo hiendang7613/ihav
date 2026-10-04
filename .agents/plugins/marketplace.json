@@ -53,8 +53,8 @@
         "source": "git-subdir",
         "url": "https://github.com/hiendang7613/ihav-web-visit-counter.git",
         "path": "./plugins/ihav-web-visit-counter",
-        "ref": "v0.1.0",
-        "sha": "c596ccaf71e41d035e9ecf014f3a2684530ca30c"
+        "ref": "v0.1.1",
+        "sha": "d5f346914bb6be6e0a7bec8ec1d0d1f89d7845a7"
       },
       "policy": {
         "installation": "AVAILABLE",
