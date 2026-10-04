@@ -37,8 +37,8 @@
       "source": {
         "source": "url",
         "url": "https://github.com/hiendang7613/ihav-agent-room.git",
-        "ref": "v0.6.3",
-        "sha": "a3acbb0cea9d16beca28e7e80f6ab9d2e67c4995"
+        "ref": "v0.7.0",
+        "sha": "b5a9c4e623cc5f4d94e5249b0ec2f0f3bf551b78"
       },
       "category": "productivity",
       "description": "Native Claude Code + Codex agent rooms with shared tasks, peer messaging, reviews and native session recovery.",
