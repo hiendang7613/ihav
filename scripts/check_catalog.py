@@ -72,6 +72,7 @@ def manifest(plugin_dir, folder, name, host):
 
 def main():
     claude, codex = entries("claude"), entries("codex")
+    registry = {p["name"]: p for p in json.loads((ROOT / "plugins.json").read_text(encoding="utf-8"))["plugins"]}
     if set(claude) != set(codex):
         errors.append(f"Claude and Codex catalogs differ: only Claude {sorted(set(claude) - set(codex))}, "
                       f"only Codex {sorted(set(codex) - set(claude))}")
@@ -87,10 +88,17 @@ def main():
             data = manifest(plugin_dir, ".claude-plugin", name, "Claude")
             if name in codex and not (plugin_dir / ".codex-plugin" / "plugin.json").is_file():
                 warnings.append(f"{name}: no .codex-plugin/plugin.json; Codex falls back to the Claude manifest")
+            declared = set()
             for dependency in (data or {}).get("dependencies", []):
                 wanted = dependency.get("name") if isinstance(dependency, dict) else dependency
+                declared.add(wanted)
                 if wanted not in claude:
                     errors.append(f"{name}: dependency {wanted!r} is not in this catalog")
+            listed = set((registry.get(name) or {}).get("depends_on", []))
+            if name not in registry:
+                errors.append(f"{name}: missing from plugins.json")
+            elif declared != listed:
+                errors.append(f"{name}: plugins.json depends_on {sorted(listed)} but the manifest declares {sorted(declared)}")
             print(f"ok {name} {(data or {}).get('version', '?')} @ {source.get('sha') or source.get('ref')}")
     for warning in warnings:
         print(f"::warning::{warning}")
