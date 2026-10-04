@@ -28,6 +28,7 @@ flowchart LR
   ihav_web_imagen("ihav-web-imagen (private)")
   ihav_agent_room -->|declared| ihav_asd_ste100
   ihav_leaderboards -->|declared| ihav_web_visit_counter
+  ihav_leaderboards -.->|sends the discovery prompt to web chatbots (not released yet)| ihav_web_chat
   ihav_competitor_search -.->|runs its visits script for traffic numbers| ihav_web_visit_counter
   ihav_web_chat -.->|reuses its ChatGPT send-button finding| ihav_web_imagen
 ```

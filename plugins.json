@@ -8,7 +8,7 @@
      "depends_on": [], "uses": []},
     {"name": "ihav-leaderboards", "visibility": "public",
      "description": "Merge the most-visited public leaderboards for any domain into one quality-first leaderboard with Pareto charts.",
-     "depends_on": ["ihav-web-visit-counter"], "uses": []},
+     "depends_on": ["ihav-web-visit-counter"], "uses": [{"name": "ihav-web-chat", "why": "sends the discovery prompt to web chatbots (not released yet)"}]},
     {"name": "ihav-web-visit-counter", "visibility": "public",
      "description": "Estimated monthly visits of a website, with date and source, no API key.",
      "depends_on": [], "uses": []},
