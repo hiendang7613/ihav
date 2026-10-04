@@ -12,20 +12,20 @@ release are in this catalog; private ones are listed so the family stays visible
 | [ihav-agent-room](https://github.com/hiendang7613/ihav-agent-room) | public | v0.7.0 | Native Claude Code and Codex agent rooms with shared tasks, peer messaging, a machine agents space and cross-room contracts. |
 | [ihav-asd-ste100](https://github.com/hiendang7613/ihav-asd-ste100) | public | v0.19.3 | Short, plain, predictable replies in any language: key-first bullets, a one-sentence Conclusion, then eight fixed status sections. |
 | [ihav-leaderboards](https://github.com/hiendang7613/ihav-leaderboards) | public | v0.2.2 | Merge the most-visited public leaderboards for any domain into one quality-first leaderboard with Pareto charts. |
+| [ihav-web-imagen](https://github.com/hiendang7613/ihav-web-imagen) | public | v0.2.0 | Draw with the ChatGPT account you already have, from Claude Code and Codex; formerly gpt-web-imagen. |
 | [ihav-web-visit-counter](https://github.com/hiendang7613/ihav-web-visit-counter) | public | v0.1.1 | Estimated monthly visits of a website, with date and source, no API key. |
 | [ihav-competitor-search](https://github.com/hiendang7613/ihav-competitor-search) | private | no | Offline competitor synthesis; the live survey is not implemented yet. |
 | [ihav-web-chat](https://github.com/hiendang7613/ihav-web-chat) | private | no | Browser-driven fan-out of one prompt to many web chatbots (unofficial, alpha). |
-| [ihav-web-imagen](https://github.com/hiendang7613/ihav-web-imagen) | private | no | Draw with the ChatGPT account you already have, from Claude Code and Codex; formerly gpt-web-imagen. |
 
 ```mermaid
 flowchart LR
   ihav_agent_room["ihav-agent-room"]
   ihav_asd_ste100["ihav-asd-ste100"]
   ihav_leaderboards["ihav-leaderboards"]
+  ihav_web_imagen["ihav-web-imagen"]
   ihav_web_visit_counter["ihav-web-visit-counter"]
   ihav_competitor_search("ihav-competitor-search (private)")
   ihav_web_chat("ihav-web-chat (private)")
-  ihav_web_imagen("ihav-web-imagen (private)")
   ihav_agent_room -->|declared| ihav_asd_ste100
   ihav_leaderboards -->|declared| ihav_web_visit_counter
   ihav_leaderboards -.->|sends the discovery prompt to web chatbots (not released yet)| ihav_web_chat

@@ -18,7 +18,7 @@
     {"name": "ihav-web-chat", "visibility": "private",
      "description": "Browser-driven fan-out of one prompt to many web chatbots (unofficial, alpha).",
      "depends_on": [], "uses": [{"name": "ihav-web-imagen", "why": "reuses its ChatGPT send-button finding"}]},
-    {"name": "ihav-web-imagen", "visibility": "private",
+    {"name": "ihav-web-imagen", "visibility": "public",
      "description": "Draw with the ChatGPT account you already have, from Claude Code and Codex; formerly gpt-web-imagen.",
      "depends_on": [], "uses": []}
   ]
