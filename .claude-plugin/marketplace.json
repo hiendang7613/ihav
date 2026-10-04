@@ -56,6 +56,19 @@
       "category": "productivity",
       "description": "Monthly website traffic estimates with source and analysis date, or an honest rank when no estimate exists.",
       "homepage": "https://github.com/hiendang7613/ihav-web-visit-counter"
+    },
+    {
+      "name": "ihav-web-imagen",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/hiendang7613/ihav-web-imagen.git",
+        "path": "plugins/ihav-web-imagen",
+        "ref": "v0.2.0",
+        "sha": "e79d045e484e62bfb4fdde50fde9a51fdba8c346"
+      },
+      "category": "productivity",
+      "description": "Draw with the ChatGPT account you already have: one line, no API key, at most one request per run, the original file saved.",
+      "homepage": "https://github.com/hiendang7613/ihav-web-imagen"
     }
   ]
 }
