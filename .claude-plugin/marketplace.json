@@ -13,8 +13,8 @@
         "source": "git-subdir",
         "url": "https://github.com/hiendang7613/ihav-leaderboards.git",
         "path": "plugins/ihav-leaderboards",
-        "ref": "v0.2.2",
-        "sha": "66524f54288133421f68c5c1d0616ff8f9ffd76c"
+        "ref": "v0.3.0",
+        "sha": "357cd81c83f61b7c233381189a4bd3abb148489b"
       },
       "category": "productivity",
       "description": "Merge the most-visited public leaderboards of any domain into one quality-first leaderboard with confidence and Pareto charts.",
@@ -25,11 +25,11 @@
       "source": {
         "source": "url",
         "url": "https://github.com/hiendang7613/ihav-asd-ste100.git",
-        "ref": "v0.19.3",
-        "sha": "9f19b6505a011b4faa3339ce2f1db0facaabeb25"
+        "ref": "v0.19.4",
+        "sha": "544bcc3c358ad153c251b568ef8e34ade08a6325"
       },
       "category": "productivity",
-      "description": "Short, plain, predictable agent replies in any language: key-first bullets, a one-sentence conclusion and fixed status sections.",
+      "description": "Short, plain, predictable replies in any language: key-first bullets, a one-sentence Conclusion, then eight fixed status sections. Rules adapted from ASD-STE100 principles.",
       "homepage": "https://github.com/hiendang7613/ihav-asd-ste100"
     },
     {
@@ -50,8 +50,8 @@
         "source": "git-subdir",
         "url": "https://github.com/hiendang7613/ihav-web-visit-counter.git",
         "path": "plugins/ihav-web-visit-counter",
-        "ref": "v0.1.1",
-        "sha": "d5f346914bb6be6e0a7bec8ec1d0d1f89d7845a7"
+        "ref": "v0.1.2",
+        "sha": "06ffa7c024bf89a174442d25b4d75ccc9d8b3fb3"
       },
       "category": "productivity",
       "description": "Monthly website traffic estimates with source and analysis date, or an honest rank when no estimate exists.",
@@ -69,6 +69,45 @@
       "category": "productivity",
       "description": "Draw with the ChatGPT account you already have: one line, no API key, at most one request per run, the original file saved.",
       "homepage": "https://github.com/hiendang7613/ihav-web-imagen"
+    },
+    {
+      "name": "ihav-competitor-search",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/hiendang7613/ihav-competitor-search.git",
+        "path": "plugins/ihav-competitor-search",
+        "ref": "v0.2.0",
+        "sha": "9524a785f3ff74adad9efccbdcf9b141f1d36a97"
+      },
+      "category": "productivity",
+      "description": "Bounded competitor surveys, traffic ranking and official-page evidence. Live delivery needs qualification.",
+      "homepage": "https://github.com/hiendang7613/ihav-competitor-search"
+    },
+    {
+      "name": "ihav-openrouter-pareto",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/hiendang7613/ihav-openrouter-pareto.git",
+        "path": "plugins/ihav-openrouter-pareto",
+        "ref": "v0.1.0",
+        "sha": "bf3e00286ef6989025877457d67d583ec0fea86b"
+      },
+      "category": "productivity",
+      "description": "OpenRouter models as quality or weekly usage vs list price, one Pareto chart per output modality, from public catalog data and the models Table.",
+      "homepage": "https://github.com/hiendang7613/ihav-openrouter-pareto"
+    },
+    {
+      "name": "ihav-auto-improve-system",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/hiendang7613/ihav-auto-improve-system.git",
+        "path": "plugins/ihav-auto-improve-system",
+        "ref": "v0.1.0",
+        "sha": "fa2ce37ecc1fdde3c505548365993bcefc57bab2"
+      },
+      "category": "productivity",
+      "description": "Improve AI pipelines with recorded evidence: frozen cases, end-to-end rounds, step replays, agent review and a keep, reject or inconclusive verdict.",
+      "homepage": "https://github.com/hiendang7613/ihav-auto-improve-system"
     }
   ]
 }

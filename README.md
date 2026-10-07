@@ -10,26 +10,31 @@ release are in this catalog; private ones are listed so the family stays visible
 | Plugin | Repository | In this catalog | What it does |
 |---|---|---|---|
 | [ihav-agent-room](https://github.com/hiendang7613/ihav-agent-room) | public | v0.7.0 | Native Claude Code and Codex agent rooms with shared tasks, peer messaging, a machine agents space and cross-room contracts. |
-| [ihav-asd-ste100](https://github.com/hiendang7613/ihav-asd-ste100) | public | v0.19.3 | Short, plain, predictable replies in any language: key-first bullets, a one-sentence Conclusion, then eight fixed status sections. |
-| [ihav-leaderboards](https://github.com/hiendang7613/ihav-leaderboards) | public | v0.2.2 | Merge the most-visited public leaderboards for any domain into one quality-first leaderboard with Pareto charts. |
+| [ihav-asd-ste100](https://github.com/hiendang7613/ihav-asd-ste100) | public | v0.19.4 | Short, plain, predictable replies in any language: key-first bullets, a one-sentence Conclusion, then eight fixed status sections. Rules adapted from ASD-STE100 principles. |
+| [ihav-auto-improve-system](https://github.com/hiendang7613/ihav-auto-improve-system) | public | v0.1.0 | Improve AI pipelines with recorded evidence: frozen cases, end-to-end rounds, step replays, agent review and a keep, reject or inconclusive verdict. |
+| [ihav-competitor-search](https://github.com/hiendang7613/ihav-competitor-search) | public | v0.2.0 | Bounded competitor surveys, traffic ranking and official-page evidence. Live delivery needs qualification. |
+| [ihav-leaderboards](https://github.com/hiendang7613/ihav-leaderboards) | public | v0.3.0 | Merge the most-visited public leaderboards for any domain into one quality-first leaderboard with Pareto charts. |
+| [ihav-openrouter-pareto](https://github.com/hiendang7613/ihav-openrouter-pareto) | public | v0.1.0 | OpenRouter models as quality or weekly usage vs list price, one Pareto chart per output modality, from public catalog data and the models Table. |
 | [ihav-web-imagen](https://github.com/hiendang7613/ihav-web-imagen) | public | v0.2.0 | Draw with the ChatGPT account you already have, from Claude Code and Codex; formerly gpt-web-imagen. |
-| [ihav-web-visit-counter](https://github.com/hiendang7613/ihav-web-visit-counter) | public | v0.1.1 | Estimated monthly visits of a website, with date and source, no API key. |
-| [ihav-competitor-search](https://github.com/hiendang7613/ihav-competitor-search) | private | no | Offline competitor synthesis; the live survey is not implemented yet. |
+| [ihav-web-visit-counter](https://github.com/hiendang7613/ihav-web-visit-counter) | public | v0.1.2 | Estimated monthly visits of a website, with date and source, no API key. |
 | [ihav-web-chat](https://github.com/hiendang7613/ihav-web-chat) | private | no | Browser-driven fan-out of one prompt to many web chatbots (unofficial, alpha). |
 
 ```mermaid
 flowchart LR
   ihav_agent_room["ihav-agent-room"]
   ihav_asd_ste100["ihav-asd-ste100"]
+  ihav_auto_improve_system["ihav-auto-improve-system"]
+  ihav_competitor_search["ihav-competitor-search"]
   ihav_leaderboards["ihav-leaderboards"]
+  ihav_openrouter_pareto["ihav-openrouter-pareto"]
   ihav_web_imagen["ihav-web-imagen"]
   ihav_web_visit_counter["ihav-web-visit-counter"]
-  ihav_competitor_search("ihav-competitor-search (private)")
   ihav_web_chat("ihav-web-chat (private)")
   ihav_agent_room -->|"declared"| ihav_asd_ste100
   ihav_leaderboards -->|"declared"| ihav_web_visit_counter
   ihav_leaderboards -.->|"sends the discovery prompt to web chatbots (not released yet)"| ihav_web_chat
   ihav_competitor_search -.->|"runs its visits script for traffic numbers"| ihav_web_visit_counter
+  ihav_competitor_search -.->|"sends the survey prompt to web chatbots (optional)"| ihav_web_chat
   ihav_web_chat -.->|"reuses its ChatGPT send-button finding"| ihav_web_imagen
 ```
 
