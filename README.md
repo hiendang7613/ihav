@@ -9,7 +9,7 @@ release are in this catalog; private ones are listed so the family stays visible
 
 | Plugin | Repository | In this catalog | What it does |
 |---|---|---|---|
-| [ihav-agent-room](https://github.com/hiendang7613/ihav-agent-room) | public | v0.7.0 | Native Claude Code and Codex agent rooms with shared tasks, peer messaging, a machine agents space and cross-room contracts. |
+| [ihav-agent-room](https://github.com/hiendang7613/ihav-agent-room) | public | v0.8.9 | Native Claude Code and Codex agent rooms with shared tasks, peer messaging, a machine agents space and cross-room contracts. |
 | [ihav-asd-ste100](https://github.com/hiendang7613/ihav-asd-ste100) | public | v0.19.4 | Short, plain, predictable replies in any language: key-first bullets, a one-sentence Conclusion, then eight fixed status sections. Rules adapted from ASD-STE100 principles. |
 | [ihav-auto-improve-system](https://github.com/hiendang7613/ihav-auto-improve-system) | public | v0.1.0 | Improve AI pipelines with recorded evidence: frozen cases, end-to-end rounds, step replays, agent review and a keep, reject or inconclusive verdict. |
 | [ihav-competitor-search](https://github.com/hiendang7613/ihav-competitor-search) | public | v0.2.0 | Bounded competitor surveys, traffic ranking and official-page evidence. Live delivery needs qualification. |
